@@ -20,8 +20,8 @@ Este proyecto es un trabajo práctico del curso **Programación Web y PHP**. Est
 1. Clona el repositorio y sitúate en la raíz del proyecto:
 
 ```bash
-git clone https://github.com/pedroesimonv/tienda-corbatas-php
-cd atelier-elie
+git clone https://github.com/pedroesimonv/tienda-corbatas-php.git
+cd tienda-corbatas-php
 ```
 
 2. Levanta los contenedores:
