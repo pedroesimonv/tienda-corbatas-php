@@ -10,6 +10,8 @@ services:
       - ./www:/var/www/html
     depends_on:
       - db
+    networks:
+      - atelier-net
 
   db:
     image: mysql:8.0
@@ -23,6 +25,9 @@ services:
       MYSQL_PASSWORD: mypassword
     volumes:
       - db_data:/var/lib/mysql
+      - ./bd/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - atelier-net
 
   phpmyadmin:
     image: phpmyadmin:latest
@@ -33,6 +38,12 @@ services:
       PMA_HOST: db
     depends_on:
       - db
+    networks:
+      - atelier-net
+
+networks:
+  atelier-net:
+    driver: bridge
 
 volumes:
   db_data:

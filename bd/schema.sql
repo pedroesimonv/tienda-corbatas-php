@@ -111,16 +111,16 @@ INSERT INTO `USUARIO` (`id_user`, `nombres`, `apellidos`, `dni`, `correo`, `tele
 (2, 'Prueba', 'Atelier', '87654321B', 'prueba@atelier.com', '611222333', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHe1h.f7A1VbU8N2Nl3a9x3A2W2c9z5X.i');
 
 INSERT INTO `DIRECCION` (`id_direccion`, `id_user`, `calle`, `ciudad`, `codigo_postal`) VALUES
-1, 1, 'Fortaleza de Kaer Morhen, Torre Principal', 'Kaedwen', '10001'),
-2, 2, 'Plaza del Mercado, N.º 12', 'Oxenfurt', '03690');
+(1, 1, 'Fortaleza de Kaer Morhen, Torre Principal', 'Kaedwen', '10001'),
+(2, 2, 'Plaza del Mercado, N.º 12', 'Oxenfurt', '03690');
 
 INSERT INTO `CORBATA` (`id_corbata`, `talla`, `color`, `material`, `marca`, `precio`, `stock`, `imagen`) VALUES
-(1, 'Estándar', 'Sombra de Lobo', 'Seda Jacquard', 'Escuela del Lobo', 49.99, 12, 'assets/img/modelo_papucho.webp'),
-(2, 'Slim', 'Verde Víbora', 'Satin', 'Atelier Élie', 39.50, 8, 'assets/img/modelo_papucho.webp'),
-(3, 'Ancha', 'Violeta Yennefer', 'Terciopelo', 'Vengerberg Haute', 59.90, 5, 'assets/img/modelo_papucho.webp'),
-(4, 'Estándar', 'Gris Plateado', 'Seda Natural', 'Atelier Élie', 44.99, 15, 'assets/img/modelo_papucho.webp'),
-(5, 'Slim', 'Azul Temerio', 'Lino', 'Corte de Wyzima', 35.00, 20, 'assets/img/modelo_papucho.webp'),
-(6, 'Ancha', 'Rojo Redanio', 'Lana Merino', 'Oxenfurt Tailors', 52.00, 6, 'assets/img/modelo_papucho.webp');
+(1, 'Estándar', 'Sombra de Lobo', 'Seda Jacquard', 'Escuela del Lobo', 49.99, 12, 'assets/img/lobo.webp'),
+(2, 'Slim', 'Verde Víbora', 'Satin', 'Atelier Élie', 39.50, 8, 'assets/img/vibora.webp'),
+(3, 'Ancha', 'Violeta Yennefer', 'Terciopelo', 'Vengerberg Haute', 59.90, 5, 'assets/img/lilas_grosellas.webp'),
+(4, 'Estándar', 'Gris Plateado', 'Seda Natural', 'Atelier Élie', 44.99, 15, 'assets/img/gato.webp'),
+(5, 'Slim', 'Azul Temerio', 'Lino', 'Corte de Wyzima', 35.00, 20, 'assets/img/grifo.webp'),
+(6, 'Ancha', 'Rojo Redanio', 'Lana Merino', 'Oxenfurt Tailors', 52.00, 6, 'assets/img/skellige.webp');
 
 INSERT INTO `FAVORITO` (`id_user`, `id_corbata`) VALUES
 (1, 1),
