@@ -100,6 +100,20 @@ CREATE TABLE `FAVORITO` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ============================================================================
+-- 6. TABLA: LINEA_PEDIDO
+-- ============================================================================
+
+CREATE TABLE `LINEA_PEDIDO` (
+  `id_linea` INT AUTO_INCREMENT PRIMARY KEY,
+  `id_pedido` INT NOT NULL,
+  `id_corbata` INT NOT NULL,
+  `cantidad` INT NOT NULL,
+  `precio_unitario` DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (`id_pedido`) REFERENCES `PEDIDO`(`id_pedido`) ON DELETE CASCADE,
+  FOREIGN KEY (`id_corbata`) REFERENCES `CORBATA`(`id_corbata`) ON DELETE CASCADE
+);
+
+-- ============================================================================
 -- POBLADO DE DATOS INICIALES (DATOS DE PRUEBA)
 -- ============================================================================
 
